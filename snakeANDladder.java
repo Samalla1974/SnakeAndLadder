@@ -2,6 +2,7 @@ public class SnakeAndLadder
 {
 	public static void main(String[] args)
 	{
+ UC4
 		int position=0;
 		int d=0;
 		int player=0;
@@ -43,5 +44,13 @@ public class SnakeAndLadder
 		position ++;
 		}
 
+		int p=0;
+ UC2
+		int d,i;
+		
+		d = (int)(Math.random()*6) + 1;
+		System.out.println("your die number is " + d
+       main
+       main
 	}
 }
