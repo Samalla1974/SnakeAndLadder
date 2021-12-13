@@ -2,19 +2,21 @@ public class SnakeAndLadder
 {
 	public static void main(String[] args)
 	{
- UC4
-		int position=0;
+		int Playerposition=0;
 		int d=0;
-		int player=0;
 		int option=0;
-		
-		d = (int)(Math.random()*6) + 1;
-		System.out.println("your die number is " + d);
-		while (position == 100)
+		int player=0;
+
+		for(Playerposition=0;Playerposition == 100;Playerposition++)
 		{
-		option = (int)(Math.random()*3) + 1;
-		switch(option)
-		{
+
+			d = (int)(Math.random()*6) + 1;
+			System.out.println("your die number is " + d);
+
+
+			option = (int)(Math.random()*3) + 1;
+			switch(option)
+			{
 			case 1:
 			System.out.println ("noplay");
 			break;
@@ -24,33 +26,36 @@ public class SnakeAndLadder
 			case 3:
 			System.out.println ("snake");
 			default:
-		}
 
-		if(option == 1)
-		{
-			position=position+0;
-			System.out.println ("player = " +position);
-		}
-		else if(option == 2)
-		{
-			position=position+d;
-			System.out.println ("player =" +position);
-		}
-		else
-		{
-			position=position-d;
-			System.out.println("player =" +position);
-		}
-		position ++;
-		}
+			if(option == 1)
+			{
+			Playerposition=Playerposition+0;
+			System.out.println ("player = " + Playerposition);
+			}
+			else if(option == 2)
+			{
+			Playerposition=Playerposition+d;
+			System.out.println ("player =" + Playerposition);
+			}
+			else
+			{
+			Playerposition=Playerposition-d;
+			System.out.println("player =" + Playerposition);
+			}
 
-		int p=0;
- UC2
-		int d,i;
-		
-		d = (int)(Math.random()*6) + 1;
-		System.out.println("your die number is " + d);
-       main
-       main
+			if( Playerposition > 100 )
+                        {
+                        Playerposition=Playerposition-d;
+                        System.out.println("player:" + Playerposition);
+                        }
+                        else
+                        {
+                        Playerposition=d;
+                        System.out.println("player:" + Playerposition);
+                        }
+
+			}
+		}
+		System.out.println(" Winner ");
 	}
 }
