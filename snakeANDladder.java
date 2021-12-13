@@ -49,7 +49,7 @@ public class SnakeAndLadder
 		int d,i;
 		
 		d = (int)(Math.random()*6) + 1;
-		System.out.println("your die number is " + d
+		System.out.println("your die number is " + d);
        main
        main
 	}
