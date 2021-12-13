@@ -6,13 +6,16 @@ public class SnakeAndLadder
 		int d=0;
 		int option=0;
 		int player=0;
+		int no_of_times_dice=0;
+		int i=0;
+		int position=0;
 
 		for(Playerposition=0;Playerposition == 100;Playerposition++)
 		{
-
 			d = (int)(Math.random()*6) + 1;
 			System.out.println("your die number is " + d);
-
+			 i=i+1;
+                        System.out.println("no of times the die rolls:" +i);
 
 			option = (int)(Math.random()*3) + 1;
 			switch(option)
